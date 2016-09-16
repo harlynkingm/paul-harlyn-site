@@ -1,0 +1,247 @@
+.header{
+  height: 90px;
+  width: 100%;
+  background-color: #333;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.5);
+}
+
+.subhead{
+  position: absolute;
+  height: 36px;
+  width: 100%;
+  background-color: #eee;
+  transition: margin 0.2s;
+  margin-top: -36px;
+}
+
+.subhead .content{
+  height: 100%;
+}
+
+.subhead .content .right{
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.subhead .content a{
+  padding: 10px 20px 10px 20px;
+  transition: background-color 0.2s;
+}
+
+.subhead .content a:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.subhead-preview{
+  margin-top: -26px;
+}
+
+.subhead-on{
+  margin-top: 0px !important;
+}
+
+.main-logo{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  transition: transform 0.2s;
+}
+
+.main-logo:hover{
+  transform: translate(0, -50%) scale(.95);
+}
+
+.tower-button{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.tower-button:hover{
+  transform: translate(0, -50%) rotateZ(-15deg);
+}
+
+.tower-button-on{
+  transform: translate(0, -50%) rotateZ(-25deg);
+}
+
+.content-feature{
+  height: 75vh;
+  background-image: url(../images/cover.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.main-display{
+  position: absolute;
+  top: 20vh;
+}
+
+.main-title{
+  font-size: 4em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.main-subtitle{
+  font-size: 1.8em;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.main-subtitle:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-subtitle img{
+  transform: translateY(10%);
+  height: 25px;
+}
+
+#album-section{
+  text-align: center;
+  margin-top: 40px;
+}
+
+#album-section img{
+  width: 75%;
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 40px;
+  transition: transform 0.2s;
+}
+
+#album-section img:hover{
+  transform: scale(0.95);
+}
+
+#about-section{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: #333;
+  overflow: hidden;
+  position: relative;
+}
+
+.piano-bg{
+  position: absolute;
+  opacity: 0.1;
+  right: 0;
+  bottom: 0;
+}
+
+.section-header{
+  font-size: 3em;
+}
+
+.section-content{
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+#studio-section{
+  margin-top: 40px;
+}
+
+#studio-section img{
+  width: 100%;
+}
+
+#studio-section .section-content{
+  padding-bottom: 40px;
+  text-align: justify;
+}
+
+.studio1, .studio2{
+  height: 30vh;
+  background-size: cover;
+  background-position: top;
+}
+
+.studio1{
+  background-image: url(../images/studio1.jpg)
+}
+
+.studio2{
+  background-image: url(../images/studio2.jpg)
+}
+
+.section-mini{
+  font-size: 1em;
+}
+
+.right{
+  float: right;
+}
+
+.dark{
+  color: #3a3a3a;
+}
+
+body{
+  font-family: "FuturaPT";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  line-height: 1.4;
+}
+
+p{
+  color: #fff;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  src: url("font/FuturaPT.otf") format("opentype");
+}
+
+@font-face{
+  font-family: "FuturaPT";
+  font-style: italic;
+  src: url("font/FuturaPT-Italic.otf") format("opentype");
+}
+
+.unselectable{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  cursor: default;
+}
+
+@media(max-width: 800px){
+  .content-feature{
+    background-position: right;
+  }
+}
+
+@media(max-width: 400px){
+  .main-title{
+    font-size: 2.4em;
+  }
+  
+  .subhead .content a{
+    padding: 10px 18px 10px 18px;
+  }
+}
