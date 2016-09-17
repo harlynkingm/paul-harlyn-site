@@ -297,4 +297,9 @@ p{
   .subhead .content .left{
     display: none;
   }
+  
+  .subhead .content .right{
+    float: none;
+    text-align: center;
+  }
 }
