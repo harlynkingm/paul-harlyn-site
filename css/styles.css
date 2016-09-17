@@ -301,5 +301,6 @@ p{
   .subhead .content .right{
     float: none;
     text-align: center;
+    margin-right: 0px;
   }
 }
