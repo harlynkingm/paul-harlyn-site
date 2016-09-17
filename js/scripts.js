@@ -30,6 +30,7 @@ jQuery(document).ready(function(){
     updateTitle();
     
     sc_widget.bind("play", function(){
+      updateTitle();
       $('#play-button').attr('src', 'images/buttons/pause_button.png');
     });
     
