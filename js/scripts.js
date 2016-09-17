@@ -1,16 +1,11 @@
 jQuery(document).ready(function(){
   
-  $(".tower-button").click(function(){
-    $(this).toggleClass("tower-button-on");
-    $(".subhead").toggleClass("subhead-on");
-  });
-  
-  $(".tower-button").mouseenter(function(){
-    $(".subhead").addClass("subhead-preview");
-  });
-  
-  $(".tower-button").mouseleave(function(){
-    $(".subhead").removeClass("subhead-preview");
+  $(window).scroll(function(){
+    if ($(window).scrollTop() > 90){
+      $(".subhead").addClass("subhead-stick");
+    } else {
+      $(".subhead").removeClass("subhead-stick");
+    }
   });
   
   $(function() {
@@ -28,4 +23,35 @@ jQuery(document).ready(function(){
       }
     });
   });
+  
+  var sc_widget = SC.Widget("sc_player");
+  
+  sc_widget.bind("ready", function(){
+    updateTitle();
+    
+    sc_widget.bind("play", function(){
+      $('#play-button').attr('src', 'images/buttons/pause_button.png');
+    });
+    
+    sc_widget.bind("pause", function(){
+      $('#play-button').attr('src', 'images/buttons/play_button.png');
+    });
+    
+    $('#ff-button').click(function(){
+      sc_widget.next();
+      sc_widget.pause();
+      updateTitle();
+    });
+    
+    $('#play-button').click(function(){
+      sc_widget.toggle();
+    });
+  });
+  
+  function updateTitle(e){
+    sc_widget.getCurrentSound(function(e){
+      $('#sc_song').text(e.title);
+    });
+  }
+
 });

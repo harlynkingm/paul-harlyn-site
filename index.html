@@ -16,6 +16,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   
   <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/soundcloud-api.js"></script>
   <script src="js/scripts.js"></script>
 
 </head>
@@ -25,15 +26,21 @@
     <a href="http://paulharlyn.com"> 
       <img class="main-logo" src="images/logo.png">
     </a>
-    <img class="tower-button" src="images/tower.png">
   </div>
   <div class="subhead">
     <div class="content">
+      <div class="left">
+        <img src="images/buttons/play_button.png" id="play-button">
+        <img src="images/buttons/ff_button.png" id="ff-button">
+        <p id="soundcloud-text">
+          <span class="dark" id="sc_song">Loading</span>
+          <span class="alt-text">from soundcloud</span></p>
+      </div>
       <div class="right">
-        <a href="#contact-section">contact</a>
-        <a href="#studio-section">studio</a>
-        <a href="#about-section">bio</a>
         <a href="#album-section">albums</a>
+        <a href="#about-section">bio</a>
+        <a href="#studio-section">studio</a>
+        <a href="#contact-section">contact</a>
       </div>
     </div>
   </div>
@@ -42,20 +49,20 @@
     <div class="container">
       <div class="row main-display">
         <p class="main-title">the color of chill</p>
-        <a href="#">
+        <a href="https://itunes.apple.com/nz/album/the-color-of-chill/id549685941" target="_blank">
           <p class="main-subtitle">out now</p>
         </a>
-        <a href="https://itunes.apple.com/nz/album/the-color-of-chill/id549685941">
+        <a href="https://itunes.apple.com/nz/album/the-color-of-chill/id549685941" target="_blank">
           <span class="main-subtitle">
             <img src="images/apple.png">
           </span>
         </a>
-        <a href="https://open.spotify.com/album/4enX8RmI5cFFEik5Oep9fi">
+        <a href="https://open.spotify.com/album/4enX8RmI5cFFEik5Oep9fi" target="_blank">
           <span class="main-subtitle">
             <img src="images/spotify.png">
           </span>
         </a>
-        <a href="https://paulharlyn.bandcamp.com/album/voyages">
+        <a href="https://paulharlyn.bandcamp.com/album/voyages" target="_blank">
           <span class="main-subtitle">
             <img src="images/bandcamp.png">
           </span>
@@ -68,17 +75,17 @@
     <div class="container">
       <div class="row">
         <div class="four columns">
-          <a href="#">
+          <a href="https://itunes.apple.com/au/album/great-barrier-across-divide/id80588976" target="_blank">
             <img src="images/covers/great-barrier-across-the-divide.jpg">
           </a>
         </div>
         <div class="four columns">
-          <a href="https://itunes.apple.com/nz/album/the-color-of-chill/id549685941">
+          <a href="https://itunes.apple.com/nz/album/the-color-of-chill/id549685941" target="_blank">
             <img src="images/covers/the-color-of-chill.jpg">
           </a>
         </div>
         <div class="four columns">
-          <a href="#">
+          <a href="https://itunes.apple.com/au/album/voyages/id407873539" target="_blank">
             <img src="images/covers/voyages.jpg">
           </a>
         </div>
@@ -175,6 +182,8 @@
       Created by Max Harlynking in 2016
     </div>
   </div>
+  
+  <iframe id="sc_player" class="hidden" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/24811&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
   
 </body>
 </html>
