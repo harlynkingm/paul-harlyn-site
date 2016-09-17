@@ -35,6 +35,7 @@ jQuery(document).ready(function(){
     });
     
     sc_widget.bind("pause", function(){
+      updateTitle();
       $('#play-button').attr('src', 'images/buttons/play_button.png');
     });
     
@@ -46,12 +47,13 @@ jQuery(document).ready(function(){
     
     $('#play-button').click(function(){
       sc_widget.toggle();
+      updateTitle();
     });
   });
   
-  function updateTitle(e){
+  function updateTitle(){
     sc_widget.getCurrentSound(function(e){
-      $('#sc_song').text(e.title);
+      $('#sc_song').html("<a href='" + e.permalink_url + "' target='_blank'>" + e.title + "</a>");
     });
   }
 

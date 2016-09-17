@@ -49,21 +49,17 @@
   left: 90px;
 }
 
-#soundcloud-text{
-  
-}
-
 .subhead .content .right{
   margin-right: 10px;
   margin-top: 6px;
 }
 
-.subhead .content a{
+.subhead .content .right a{
   padding: 10px 20px 10px 20px;
   transition: background-color 0.2s;
 }
 
-.subhead .content a:hover{
+.subhead .content .right a:hover{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
