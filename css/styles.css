@@ -157,6 +157,11 @@
   margin-top: 40px;
 }
 
+#studio-section .container{
+  padding-bottom: 20px;
+  border-bottom: 1px #999 solid;
+}
+
 #studio-section img{
   width: 100%;
 }
@@ -182,6 +187,21 @@
 
 .section-mini{
   font-size: 1em;
+}
+
+#contact-section{
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer{
+  background-color: #333;
+}
+
+.footer-content{
+  color: #eee;
+  padding: 8px;
+  margin-left: 20px;
 }
 
 .right{
