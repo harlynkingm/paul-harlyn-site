@@ -24,6 +24,10 @@ jQuery(document).ready(function(){
     });
   });
   
+  $(".content-feature").parallax({
+    imageSrc: '../images/cover2.jpg'
+  });
+  
   var sc_widget = SC.Widget("sc_player");
   
   sc_widget.bind("ready", function(){
@@ -54,6 +58,7 @@ jQuery(document).ready(function(){
   function updateTitle(){
     sc_widget.getCurrentSound(function(e){
       $('#sc_song').html("<a href='" + e.permalink_url + "' target='_blank'>" + e.title + "</a>");
+      $("#sc_link").html("<a href='" + e.permalink_url + "' target='_blank'>soundcloud</a>");
     });
   }
 
