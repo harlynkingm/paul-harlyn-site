@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
   });
   
   $(".content-feature").parallax({
-    imageSrc: '../images/cover2.jpg'
+    imageSrc: 'images/cover2.jpg'
   });
   
   var sc_widget = SC.Widget("sc_player");
