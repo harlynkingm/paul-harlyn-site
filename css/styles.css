@@ -95,6 +95,16 @@
   top: 20vh;
 }
 
+.main-pretitle{
+  display: inline-block;
+  font-size: 1.6em;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
 .main-title{
   font-size: 4em;
   background-color: rgba(0, 0, 0, 0.5);
@@ -122,6 +132,7 @@
 .main-subtitle img{
   transform: translateY(10%);
   height: 25px;
+  opacity: 0.9;
 }
 
 #album-section{
@@ -145,6 +156,24 @@
   background-color: #333;
   overflow: hidden;
   position: relative;
+}
+
+.album-image{
+  position: relative;
+}
+
+.album-year{
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: top 0.2s;
+  opacity: 0.7;
+}
+
+#album-section img:hover + .album-year{
+  top: -20px;
 }
 
 .piano-bg{
@@ -242,6 +271,11 @@ a {
 
 ul{
   line-height: 1.4;
+  list-style-type: none;
+}
+
+ul li:before {
+  content: '- ';
 }
 
 p{
