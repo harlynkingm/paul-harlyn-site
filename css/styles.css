@@ -166,14 +166,14 @@
   z-index: -1;
   position: absolute;
   left: 50%;
-  top: 0;
+  bottom: 20%;
   transform: translateX(-50%);
-  transition: top 0.2s;
+  transition: bottom 0.2s;
   opacity: 0.7;
 }
 
 #album-section img:hover + .album-year{
-  top: -20px;
+  bottom: 25px;
 }
 
 .piano-bg{
@@ -312,6 +312,10 @@ p{
   cursor: default;
 }
 
+.youtube-embed{
+  height: 400px;
+}
+
 @media(max-width: 800px){
   .content-feature{
     background-position: right;
@@ -337,5 +341,9 @@ p{
     float: none;
     text-align: center;
     margin-right: 0px;
+  }
+  
+  .youtube-embed{
+    height: 200px;
   }
 }
