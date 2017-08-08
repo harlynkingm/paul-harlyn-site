@@ -76,13 +76,10 @@
   transition: opacity 0.1s;
 }
 
-.main-logo:hover{
-  opacity: 0.85;
-}
-
 .content-feature{
-  height: 75vh;
+  height: 40vh;
   background: transparent;
+  overflow: hidden;
 /*
   background-image: url(../images/cover2.jpg);
   background-position: bottom;
@@ -92,7 +89,7 @@
 
 .main-display{
   position: absolute;
-  top: 20vh;
+  top: 10vh;
 }
 
 .main-pretitle{
@@ -138,6 +135,7 @@
 #album-section{
   text-align: center;
   margin-top: 40px;
+  padding-bottom: 30px;
 }
 
 #album-section img{
@@ -148,6 +146,10 @@
 
 #album-section img:hover{
   transform: scale(0.95);
+}
+
+#album-section .section-header{
+  text-align: left;
 }
 
 #about-section{
@@ -183,8 +185,13 @@
   bottom: 0;
 }
 
+.space {
+  margin-bottom: 20px;
+}
+
 .section-header{
   font-size: 3em;
+  margin-bottom: 15px;
 }
 
 .section-content{
@@ -193,12 +200,8 @@
 }
 
 #studio-section{
-  margin-top: 40px;
-}
-
-#studio-section .container{
-  padding-bottom: 20px;
-  border-bottom: 1px #999 solid;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 #studio-section img{
@@ -210,18 +213,27 @@
   text-align: justify;
 }
 
+#studio-section .info p{
+  margin-bottom: 5px;
+  color: rgba(38, 38, 38, 0.6);
+}
+
+#studio-section .info p b{
+  color: rgba(38, 38, 38, 1);
+}
+
 .studio1, .studio2{
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   background-position: top;
 }
 
 .studio1{
-  background-image: url(../images/studio1.jpg)
+  background-image: url(../images/studio1_1.jpg)
 }
 
 .studio2{
-  background-image: url(../images/studio2.jpg)
+  background-image: url(../images/studio2_2.jpg)
 }
 
 .section-mini{
@@ -231,6 +243,13 @@
 #contact-section{
   margin-top: 20px;
   padding-bottom: 20px;
+}
+
+#videos-section .container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px #999 solid;
+  border-top: 1px #999 solid;
 }
 
 #footer{
@@ -314,6 +333,7 @@ p{
 
 .youtube-embed{
   height: 400px;
+  padding-bottom: 20px;
 }
 
 @media(max-width: 800px){
@@ -333,6 +353,14 @@ p{
 }
 
 @media(max-width: 600px){
+  .studio1, .studio2{
+    height: 30vh;
+  }
+  
+  .studio1{
+    margin-bottom: 20px;
+  }
+  
   .subhead .content .left{
     display: none;
   }
