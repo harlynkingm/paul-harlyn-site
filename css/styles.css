@@ -223,7 +223,7 @@
 }
 
 .studio1, .studio2{
-  height: 40vh;
+  height: 36vh;
   background-size: cover;
   background-position: top;
 }
@@ -233,7 +233,7 @@
 }
 
 .studio2{
-  background-image: url(../images/studio2_2.jpg)
+  background-image: url(../images/studio2_3.jpg)
 }
 
 .section-mini{
