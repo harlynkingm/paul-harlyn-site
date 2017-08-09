@@ -364,9 +364,13 @@ p{
   }
 }
 
-@media(max-width: 600px){
+@media(max-width: 700px){
   .studio1, .studio2{
     height: 30vh;
+  }
+  
+  #videos-section{
+    display: none;
   }
   
   .studio1{
