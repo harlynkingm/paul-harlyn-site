@@ -49,6 +49,12 @@
   left: 90px;
 }
 
+#sc_position{
+  display: inline-block;
+  width: 30px;
+  overflow-x: visible;
+}
+
 .subhead .content .right{
   margin-right: 10px;
   margin-top: 6px;
@@ -158,6 +164,11 @@
   background-color: #333;
   overflow: hidden;
   position: relative;
+}
+
+.changeLink{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .album-image{
