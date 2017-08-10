@@ -103,7 +103,9 @@ jQuery(document).ready(function(){
   
   function changeSong(newUrl){
     sc_widget.pause();
-    sc_widget.load(newUrl, {"auto_play": true, "hide_related":false, "show_comments":false, "show_user":true, "visual":true});
+    if ($(window).width() > 700){
+      sc_widget.load(newUrl, {"auto_play": true, "hide_related":false, "show_comments":false, "show_user":true, "visual":true});
+    }
   }
 
   function next(){

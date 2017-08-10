@@ -75,6 +75,7 @@
 }
 
 .main-logo{
+  height: 75%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -348,12 +349,6 @@ p{
   padding-bottom: 20px;
 }
 
-@media(max-width: 800px){
-  .content-feature{
-    background-position: right;
-  }
-}
-
 @media(max-width: 400px){
   .main-title{
     font-size: 2.4em;
@@ -365,6 +360,16 @@ p{
 }
 
 @media(max-width: 700px){
+  .changeLink{
+    text-decoration: none;
+    user-select: none;
+    cursor: default;
+  }
+  
+  .content-feature {
+    margin-top: 36px;
+  }
+  
   .studio1, .studio2{
     height: 30vh;
   }
