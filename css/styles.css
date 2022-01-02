@@ -185,6 +185,11 @@
   margin-bottom: 15px;
 }
 
+.section-details {
+  font-size: 0.5em;
+  padding-top: 22px;
+}
+
 .section-content{
   font-size: 1.5em;
   line-height: 1.6;
