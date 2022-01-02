@@ -28,7 +28,6 @@
   </script>
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/parallax.min.js"></script>
-  <script src="js/soundcloud-api.js"></script>
   <script src="js/scripts.js"></script>
 
 </head>
@@ -41,49 +40,33 @@
   </div>
   <div class="subhead">
     <div class="content">
-      <div class="left">
-        <img src="images/buttons/play_button.png" id="play-button">
-        <img src="images/buttons/ff_button.png" id="ff-button">
-        <p id="soundcloud-text">
-          <span class="alt-text unselectable" id="sc_position">0:00 </span>
-          <span class="alt-text unselectable" id="sc_duration">/ 0:00 | </span>
-          <span class="dark" id="sc_song">Loading</span>
-          <span class="alt-text">from <span id="sc_link">soundcloud</span></span>
-        </p>
-      </div>
-      <div class="right">
-        <a href="#studio-section">studio</a>
-        <a href="#about-section">bio</a>
-        <a href="#album-section">albums</a>
-        <a href="#videos-section" id="videos-section-header">videos</a>
-        <a href="#contact-section">contact</a>
-      </div>
+      <a href="#studio-section">studio</a>
+      <a href="#about-section">bio</a>
+      <a href="#album-section">albums</a>
+      <a href="#videos-section" id="videos-section-header">videos</a>
+      <a href="#contact-section">contact</a>
     </div>
   </div>
 
   <div class="content-feature unselectable">
     <div class="container">
       <div class="row main-display">
-<!--        <p class="main-pretitle">new album</p>-->
-        <p class="main-title">the paris lounge</p>
-        <a href="https://itunes.apple.com/us/album/the-paris-lounge/id1204457885" target="_blank">
-          <p class="main-subtitle">new album</p>
-        </a>
-        <a href="https://itunes.apple.com/us/album/the-paris-lounge/id1204457885" target="_blank">
-          <span class="main-subtitle">
-            <img src="images/apple.png">
-          </span>
-        </a>
-        <a href="https://open.spotify.com/album/3FgJGDD3IN0CPNzF4XVrYR" target="_blank">
-          <span class="main-subtitle">
-            <img src="images/spotify.png">
-          </span>
-        </a>
-        <a href="http://a.co/iNnxviV" target="_blank">
-          <span class="main-subtitle">
-            <img src="images/amazon.png">
-          </span>
-        </a>
+        <span class="main-title">Journeys</span>
+        <div class="link-wrapper">
+          <a target="_blank">
+            <p class="main-subtitle nohover">new album</p>
+          </a>
+          <a href="https://music.apple.com/mx/album/journeys/1601456298" target="_blank">
+            <span class="main-subtitle">
+              <img src="images/apple.png">
+            </span>
+          </a>
+          <a href="https://open.spotify.com/album/50VxXICtiavbzcijIa7rJB?si=e1b_ogiQR4KYkOXEVUFU8w" target="_blank">
+            <span class="main-subtitle">
+              <img src="images/spotify.png">
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -125,7 +108,7 @@
           <p class="section-content">
             Paul Harlyn is a producer, keyboardist, guitar and bass player, studio owner, and arranger, who specializes in working with recording artists, singers and songwriters. From concept to the finished master, Paul helps the artists he works with create their musical vision.
             <br><br>
-            His musical projects cover a wide range of styles and influences, including performing all the instruments on the remixes of the Alicia Keys song <span data-url="https://api.soundcloud.com/tracks/336997248" class="changeLink">“If I Ain't Got You” (J Records)</span>, the Mary J. Blige song <span data-url="https://api.soundcloud.com/tracks/336997245" class="changeLink">“To Be Real” (Geffen Records)</span>, and the Angie Stone song ”Come into my Life” (BMG records).
+            His musical projects cover a wide range of styles and influences, including performing all the instruments on the remixes of the Alicia Keys song <span class="changeLink">“If I Ain't Got You” (J Records)</span>, the Mary J. Blige song <span class="changeLink">“To Be Real” (Geffen Records)</span>, and the Angie Stone song ”Come into my Life” (BMG records).
             <br><br>
             Paul has released seven albums under the project name Great Barrier which can be heard in placed in visual media and in restaurants, airplanes, and clubs internationally. His song “Cairo” released on the Buddha Bar Records Vol. II compilation has sold over a half a million units to date.
           </p>
@@ -141,58 +124,75 @@
       </div>
       <div class="row">
         <div class="four columns">
-          <a href="https://itunes.apple.com/us/album/great-barrier-across-the-divide/id80588976" target="_blank">
+          <a href="https://open.spotify.com/album/50VxXICtiavbzcijIa7rJB?si=OCNjZxZMR_SbM0SeCMDSEA" target="_blank">
+            <div class="album-image">
+              <img src="images/covers/journeys.jpg">
+            </div>
+          </a>
+        </div>
+        <div class="four columns">
+          <a href="https://open.spotify.com/album/2LCN3qG64h4TWRA8udKFsV?si=icKZ58NGQiaE87TLfNj8Iw" target="_blank">
+            <div class="album-image">
+              <img src="images/covers/departure-bay.jpg">
+            </div>
+          </a>
+        </div>
+        <div class="four columns">
+          <a href="https://open.spotify.com/album/1c8Yg3iqRKysFtFnhyemCS?si=MUDVuCryQcmZbhlF8KYaBQ" target="_blank">
+            <div class="album-image">
+              <img src="images/covers/stepping-stones.jpg">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <a href="https://open.spotify.com/album/344dhOVFIubR6jlr3J0D5u?si=njFPvwKTSoqPVmt2OuNgmA" target="_blank">
             <div class="album-image">
               <img src="images/covers/great-barrier-across-the-divide.jpg">
-              <span class="album-year">(2000)</span>
             </div>
           </a>
         </div>
         <div class="four columns">
-          <a href="https://itunes.apple.com/us/album/the-color-of-chill/id549685941" target="_blank">
+          <a href="https://open.spotify.com/album/4enX8RmI5cFFEik5Oep9fi?si=AcmlE7GyRwe8GskKu6KbaQ" target="_blank">
             <div class="album-image">
               <img src="images/covers/the-color-of-chill.jpg">
-              <span class="album-year">(2012)</span>
             </div>
           </a>
         </div>
         <div class="four columns">
-          <a href="https://itunes.apple.com/us/album/voyages/id407873539" target="_blank">
+          <a href="https://open.spotify.com/album/7xFtEN51ugINB0Yg7H8Qfw?si=c2zZv3-kRdexjT_5V6VYAQ" target="_blank">
             <div class="album-image">
               <img src="images/covers/voyages.jpg">
-              <span class="album-year">(2010)</span>
             </div>
           </a>
         </div>
       </div>
       <div class="row">
         <div class="four columns">
-          <a href="https://itunes.apple.com/us/album/great-barrier-cairo/id347007149" target="_blank">
+          <a href="https://open.spotify.com/album/29tEvBWQFVAAphatLOBmmh?si=tP6BcpmARk-sEt-PBZ_24A" target="_blank">
             <div class="album-image">
               <img src="images/covers/cairo.jpg">
-              <span class="album-year">(2009)</span>
             </div>
           </a>
         </div>
         <div class="four columns">
-          <a href="https://itunes.apple.com/us/album/great-barrier/id326590005" target="_blank">
+          <a href="https://open.spotify.com/album/2Ee3AACr2VVzm9QeCFWA1h?si=-FzwkcnGQSCRMps8cmH52w" target="_blank">
             <div class="album-image">
               <img src="images/covers/great-barrier.jpg">
-              <span class="album-year">(2000)</span>
             </div>
           </a>
         </div>
         <div class="four columns">
-          <a href="https://itunes.apple.com/us/album/great-barrier-between-conflict-and-resolution/id165108260" target="_blank">
+          <a href="https://open.spotify.com/album/7BZOgdd6K71R0cc8nThv45?si=8VPWaUDfQl-hUAfwCMmCWA" target="_blank">
             <div class="album-image">
               <img src="images/covers/between-conflict-and-resolution.jpg">
-              <span class="album-year">(2003)</span>
             </div>
           </a>
         </div>
       </div>
       <div class="row">
-        <iframe src="https://open.spotify.com/embed?uri=spotify:user:1219336604:playlist:2HtCKeECzOFRAMpgMAbTSb&theme=white&view=coverart" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E4zOhPfq34iBc" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
       </div>
     </div>
   </div>
@@ -203,7 +203,13 @@
         <p class="section-header dark">videos</p>
       </div>
       <div class="row">
+        <iframe width="100%" class="youtube-embed" src="https://www.youtube.com/embed/n4FEumNOybU" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="row">
         <iframe width="100%" class="youtube-embed" src="https://www.youtube.com/embed/oqZKtyX9p7k" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="row">
+        <iframe width="100%" class="youtube-embed" src="https://www.youtube.com/embed/__II2bqjYkk" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -253,8 +259,6 @@
       Created by <a href="http://maxharlynking.com" target="_blank">Max Harlynking</a> in 2017
     </div>
   </div>
-
-  <iframe id="sc_player" class="hidden" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/291200608&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
 </body>
 </html>

@@ -18,10 +18,8 @@
 
 .subhead .content{
   height: 100%;
-}
-
-.subhead .content .left{
-  margin-left: 20px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .subhead .content img, .subhead .content p{
@@ -55,17 +53,12 @@
   overflow-x: visible;
 }
 
-.subhead .content .right{
-  margin-right: 10px;
-  margin-top: 6px;
-}
-
-.subhead .content .right a{
-  padding: 10px 20px 10px 20px;
+.subhead .content a{
+  padding: 10px 20px;
   transition: background-color 0.2s;
 }
 
-.subhead .content .right a:hover{
+.subhead .content a:hover{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -87,11 +80,6 @@
   height: 40vh;
   background: transparent;
   overflow: hidden;
-/*
-  background-image: url(../images/cover2.jpg);
-  background-position: bottom;
-  background-size: cover;
-*/
 }
 
 .main-display{
@@ -133,6 +121,10 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.main-subtitle.nohover:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .main-subtitle img{
   transform: translateY(10%);
   height: 25px;
@@ -149,6 +141,7 @@
   width: 75%;
   margin-bottom: 40px;
   transition: transform 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #album-section img:hover{
@@ -174,20 +167,6 @@
 
 .album-image{
   position: relative;
-}
-
-.album-year{
-  z-index: -1;
-  position: absolute;
-  left: 50%;
-  bottom: 20%;
-  transform: translateX(-50%);
-  transition: bottom 0.2s;
-  opacity: 0.7;
-}
-
-#album-section img:hover + .album-year{
-  bottom: 25px;
 }
 
 .piano-bg{
@@ -276,7 +255,6 @@
 }
 
 .left{
-  float: left;
   display: inline-block;
 }
 
@@ -380,16 +358,6 @@ p{
   
   .studio1{
     margin-bottom: 20px;
-  }
-  
-  .subhead .content .left{
-    display: none;
-  }
-  
-  .subhead .content .right{
-    float: none;
-    text-align: center;
-    margin-right: 0px;
   }
   
   .youtube-embed{
