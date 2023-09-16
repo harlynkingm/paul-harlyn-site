@@ -56,6 +56,7 @@
 .subhead .content a{
   padding: 10px 20px;
   transition: background-color 0.2s;
+  text-decoration: none;
 }
 
 .subhead .content a:hover{
@@ -181,7 +182,7 @@
 }
 
 .section-header{
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 15px;
 }
 
@@ -191,7 +192,7 @@
 }
 
 .section-content{
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1.6;
 }
 
@@ -280,7 +281,6 @@ body{
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 
