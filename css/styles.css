@@ -55,7 +55,6 @@
 
 .subhead .content a{
   padding: 10px 20px;
-  transition: background-color 0.2s;
   text-decoration: none;
 }
 
@@ -100,7 +99,7 @@
 
 .main-title{
   font-size: 4em;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   color: rgba(255, 255, 255, 0.9);
   padding-left: 10px;
   padding-right: 10px;
@@ -113,9 +112,8 @@
   padding-right: 10px;
   margin-right: 5px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.75);
   display: inline-block;
-  transition: background-color 0.2s;
 }
 
 .main-subtitle:hover{

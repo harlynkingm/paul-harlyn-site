@@ -25,10 +25,9 @@ jQuery(document).ready(function(){
   });
   
   $(".content-feature").parallax({
-    imageSrc: 'images/cover2.jpg',
-    // imageSrc: 'images/cover3.jpg',
-    // positionY: '-160px',
-    // positionX: '0px',
+    imageSrc: 'images/cover3.jpg',
+    positionY: '-160px',
+    positionX: '0px',
   });
 
 });
