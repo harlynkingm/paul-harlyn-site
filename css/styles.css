@@ -332,11 +332,21 @@ p{
 
 @media(max-width: 400px){
   .main-title{
-    font-size: 2.4em;
+    font-size: 2em;
+  }
+
+  .main-subtitle{
+    font-size: 1.4em;
   }
   
   .subhead .content a{
     padding: 10px 18px 10px 18px;
+  }
+}
+
+@media(max-width: 500px){
+  .main-title{
+    font-size: 2.4em;
   }
 }
 
@@ -365,11 +375,5 @@ p{
   
   .youtube-embed{
     height: 200px;
-  }
-}
-
-@media(max-width: 360px){
-  .main-subtitle{
-    font-size: 1.4em;
   }
 }
