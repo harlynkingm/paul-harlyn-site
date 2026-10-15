@@ -26,7 +26,7 @@ jQuery(document).ready(function(){
   
   $(".content-feature").parallax({
     imageSrc: 'images/bestof.jpg',
-    positionY: '0px',
+    positionY: '35px',
     positionX: 'right -5px',
   });
 

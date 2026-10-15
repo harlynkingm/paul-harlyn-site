@@ -80,6 +80,7 @@
   height: 400px;
   background: transparent;
   overflow: hidden;
+  background-position: 67% 0 !important;
 }
 
 .main-display{
@@ -375,5 +376,16 @@ p{
   
   .youtube-embed{
     height: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .parallax-mirror {
+    display: none !important;
+  }
+  .content-feature {
+    background-image: url(../images/bestof.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
